@@ -14,6 +14,10 @@
  *= require_self
  */
 
+ body {
+   background-color: #2B2B2B;
+   color:#F6F6F6
+ }
  .main-content{
    display: flex;
    flex-direction: column;
@@ -23,7 +27,21 @@
  }
 
  #main-nav{
+  font-family: monospace;
   display: flex;
   justify-content: flex-end;
   padding: 0 10px;
+ }
+
+ .sign-out {
+   font-weight: bold;
+   text-decoration: none;
+ }
+
+ .sign-out:hover{
+   text-decoration: underline;
+ }
+
+ a:visited{
+   color: #F6F6F6;
  }
