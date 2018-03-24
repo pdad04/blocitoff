@@ -33,13 +33,19 @@
   padding: 0 10px;
  }
 
+ #main-nav > ul > a {
+   text-decoration: none;
+   border: 1px solid;
+   padding: 5px;
+ }
+
+ #main-nav > ul > a:hover{
+   text-decoration: underline;
+ }
+
  .sign-out {
    font-weight: bold;
    text-decoration: none;
- }
-
- .sign-out:hover{
-   text-decoration: underline;
  }
 
  a:visited{

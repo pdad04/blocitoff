@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :users_profile, controller: :users, only: :show
+
   devise_for :users
   root 'welcome#index'
 
