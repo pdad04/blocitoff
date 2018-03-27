@@ -43,6 +43,12 @@
    text-decoration: underline;
  }
 
+ #login-alert {
+   text-align: center;
+   font-weight: bold;
+   color: red;
+ }
+
  .sign-out {
    font-weight: bold;
    text-decoration: none;

@@ -22,6 +22,9 @@
           <%end%>
         </ul>
       </nav>
+      <% if flash[:alert] %>
+        <h3 id="login-alert"><%= flash[:alert] %></h2>
+      <%end%>
       <%= yield %>
     </section>
   </body>
