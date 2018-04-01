@@ -1,0 +1,54 @@
+<% if !all_items.empty? %>
+  <table>
+    <tr>
+      <th>
+        Description
+      </th>
+      <th>
+        Days left
+      </th>
+      <th>
+        Complete
+      </th>
+    </tr>
+    <tbody>
+      <% all_items.each do |item| %>
+        <tr>
+          <td>
+            <%= item.name %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>
+          <%= render partial: 'items/form' %>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+<% else %>
+<table>
+  <tr>
+    <th>
+      Description
+    </th>
+    <th>
+      Days left
+    </th>
+    <th>
+      Complete
+    </th>
+  </tr>
+  <tbody>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>
+        <%= render partial: 'items/form', locals: {user: @user, item: @item } %>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+<%end%>
