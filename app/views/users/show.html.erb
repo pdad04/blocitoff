@@ -1,5 +1,6 @@
 <h1><%= "Welcome #{@user.email}" %></h1>
 <% all_items %>
-<div>
+<div id="content">
+  <h2>To Do</h2>
   <%= render partial: 'items/item' %>
 </div>

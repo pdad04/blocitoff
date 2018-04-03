@@ -8,8 +8,8 @@ class ItemsController < ApplicationController
       flash[:notice] = "Item was saved."
       redirect_to user_path(current_user.id)
     else
-      flash[:alert] = "There was an error saving the wiki. Please try again."
-      render :new
+      flash[:alert] = "There was an error saving the todo. Please try again."
+      redirect_to user_path(current_user.id)
     end
   end
 

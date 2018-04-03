@@ -1,3 +1,45 @@
 // Place all the styles related to the items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+table,td,th{
+  width: 400px;
+}
+
+tbody > tr:nth-child(even){
+  background-color: #F6F6F6;
+  color: #2B2B2B;
+}
+
+tfoot > tr > td {
+  border: 1px solid #F6F6F6;
+  padding: 5px;
+  text-align: left;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 50%;
+  border: 1px solid #2B2B2B;
+  border-radius: 4px;
+}
+
+input[type=submit]{
+  background-color: #2B2B2B;
+  height: 24px;
+  color: #F6F6F6;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color: #424242;
+}
+
+#content {
+  height: 400px;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 100px 20px;
+  align-self: center;
+  text-align: center;
+}
