@@ -6,8 +6,12 @@ table,td,th{
 }
 
 tbody > tr:nth-child(even){
-  background-color: #F6F6F6;
+  background-color: #c4c4c4;
   color: #2B2B2B;
+}
+
+tbody > tr > td {
+  height: 30px;
 }
 
 tfoot > tr > td {
@@ -32,7 +36,8 @@ input[type=submit]{
 }
 
 input[type=submit]:hover {
-  background-color: #424242;
+  background-color: #c4c4c4;
+  color: #2B2B2B;
 }
 
 #content {

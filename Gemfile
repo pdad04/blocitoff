@@ -19,7 +19,8 @@ source 'https://rubygems.org'
  group :development do
    # Use sqlite3 as the development database for Active Record
    gem 'sqlite3'
-   gem "letter_opener"
+   gem 'letter_opener'
+   gem 'faker'
  end
 
  # Use Puma as the app server

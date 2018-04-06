@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
 
   def all_items
     @items = Item.all
+    @items.to_a.delete_if{|item| item.user_id != current_user.id}
   end
 
   helper_method :all_items
