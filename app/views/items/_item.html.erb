@@ -1,4 +1,4 @@
-<table>
+<table id="tasks-list">
   <tr>
     <th>
       Description
@@ -7,24 +7,31 @@
       Days left
     </th>
     <th>
-      Complete
+      Mark Complete
     </th>
   </tr>
 <% if !all_items.empty? %>
   <% all_items.each do |item| %>
-    <tr>
+    <tr class="tlist">
       <td>
         <%= item.name %>
       </td>
+      <td>
+
+      </td>
+      </td>
+      <td>
+        <%= link_to "", user_item_path(current_user.id, item.id), method: :delete, class: 'fa fa-check', remote: true %>
+      </td>
     </tr>
   <% end %>
-<tfoot>
-  <tr>
-    <td colspan="3">
-      <%= render partial: 'items/form' %>
-    </td>
-  </tr>
-</tfoot>
+  <tfoot>
+    <tr>
+      <td colspan="3">
+        <%= render partial: 'items/form' %>
+      </td>
+    </tr>
+  </tfoot>
   </table>
 <% else %>
   <tfoot>

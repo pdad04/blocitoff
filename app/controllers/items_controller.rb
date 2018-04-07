@@ -13,6 +13,16 @@ class ItemsController < ApplicationController
     end
   end
 
+  def destroy
+    @item = Item.find(params[:id])
+
+    if @item.destroy
+      flash[:notice] = "To-Do removed successfully"
+    else
+      flash[:alert] = "To-Do was not removed. Please try again."
+    end
+  end
+
   private
 
   def item_params
